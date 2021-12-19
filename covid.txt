@@ -1,0 +1,26 @@
+// project covid.
+#include<iostream>
+using namespace std;
+
+int main(){
+  float age,name;
+  cout<<"Tell me your age and name "<<endl;
+  cin>>age>>name;
+  
+  if ((age>1)&&(age<18)){
+    cout<<"You will not be given COVID vaccine because goverment rules do not give it to those below 18 years of age." <<endl;
+    }
+    else if (age<=0){
+      cout<<"Sorry,i don't understand,what are you saying, \nplease tell me your age. "<<endl;
+    }
+    else if ((age>=18)&&(age<75)){
+      cout<<"You will be given covid vaccine because it is rule of the goverment that everyone who is equal or above 18 years of age and below 75 year of age."<<endl;
+    }
+    else if(age<1){
+      cout<<"You are not yet born "<<endl;
+      }
+    else if(age>75){
+      cout<<"sorry, everyone lives only 75 years. "<<endl;
+      }
+    return 0;
+}s
